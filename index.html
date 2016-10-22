@@ -8,21 +8,40 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="main.js"></script>
 	</head>
+	<!-- <body>
+		<div class="graph-wrapper">
+
+            <script id="barGraph-template" type="text/x-handlebars-template">
+
+                <div class="bar-wrapper">
+                    <div class="bar bar{{charCount}}"></div>
+                    <div class="title">{{charCount}}</div>    
+                </div>
+
+            </script>
+
+        </div> end graph-wrapper
+
+	</body> -->
+
 	<body>
 		<div class="graph-wrapper">
 
 			<script id="barGraph-template" type="text/x-handlebars-template">
-
+			
+				{{#each .}}
 				<div class="bar-wrapper">
-				    <div class="bar"></div>
-				    <div class="title">{{charCount}}</div>    
+					<div class="bar" style="height:{{y}}%"></div>
+					<div class="title">{{x}}</div>
 				</div>
+				{{/each}}
 
 			</script>
 
 		</div> <!-- end graph-wrapper -->
 
 	</body>
+
 </html>
 
 

@@ -14,23 +14,19 @@
 	height: 200px;
 	margin: 0px;
 }
-.title, .bar {
-	
-}
+.title {}
 
 .bar {
 	/*border: 1px solid #000;*/
-	/*height: 70%;*/
 	width: 30px;
 	background: #00AEEF;
 	bottom: 0px;
 	-webkit-animation: animate-bar 1.25s 1 linear;
 }
 
-.title {
-	
+@-webkit-keyframes animate-bar {
+    0% {
+		height: 0%;
+	}
 }
 
-@-webkit-keyframes animate-bar {
-    0% { height: 0%; }
-}
